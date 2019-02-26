@@ -1,0 +1,302 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  color: #8d1731;
+}
+
+body {
+  background-image: url('rijks_background.jpg'); 
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  background-color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  width: auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+  position: relative;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ddd; /* Add a grey border */
+  border-radius: 7px;
+  width: 200px;
+}
+
+.btn-primary:hover {
+  background-color: #1a5563;
+  -webkit-transition-duration: 0.7s opacity;
+       -o-transition-duration: 0.7s opacity;
+          transition-duration: 0.7s opacity;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.btn-primary:focus {
+  background-color: #1a5563;
+  -webkit-transition-duration: 0.7s opacity;
+       -o-transition-duration: 0.7s opacity;
+          transition-duration: 0.7s opacity;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 10px;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  margin: 70px auto;
+  max-width: 400px;
+  background: #8d1731;
+  opacity: 0.8;
+  
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+@media all and (max-width: 450px) {
+  body {
+    font-size: 15px;
+  }
+
+  button{
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  #query {
+    font-size: 14px;
+  }
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  
+  /* to show it above other content */
+  z-index: 999; 
+  
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto; 
+  
+  /* this is used to center the modal */
+  display: -ms-grid;
+  display: grid;
+}
+
+.modal {
+  margin: auto;
+  background-color: #fff;
+  display: inline-flexbox;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  max-width: 630px;
+  text-align: center;
+}
+
+.modal-close {
+  float: right;
+  border: 0;
+  border-radius: 7px;
+  background: #1a5563;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  width: 150px;
+  -webkit-box-shadow: 4px 3px 20px grey;
+          box-shadow: 4px 3px 20px grey;
+  margin: 15px;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  background-color: #8d1731;
+}
+
+.modal-close:focus {
+  cursor: pointer;
+  background-color: #8d1731;
+}
+
+.modal-close:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal h3 p {
+  font: italic 500 14px 'Source Sans Pro', sans-serif;
+  background: transparent;
+}
+
+.modal p {
+  padding: 10px;
+  margin: 10px;
+  background: #e8ecec;
+  border-radius: 7px;
+  text-align: left;
+}
+
+span {
+  font-style: italic;
+}
+
+.thumb {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff;
+}
+
+.thumb:hover,
+.thumb:focus,
+#thumb-w-bg:hover,
+#thumb-w-bg:focus {
+  cursor: pointer;
+  opacity: 0.2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#thumb-w-bg {
+  background-image: url('thumb_bg.jpg');
+  background-size: cover;
+  opacity: 0.5;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: none;
+}
+
+.title {
+  position: absolute;
+  top: 35%;
+  left: 4%;
+  right: 4%;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transform: translate(0px, -200px);
+      -ms-transform: translate(0px, -200px);
+          transform: translate(0px, -200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover .title,
+button:focus .title {
+  cursor: pointer;
+  visibility: visible;
+  opacity: 0.8;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+button:hover .title h3 {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0px 10px;
+}
+
+button:focus .title h3 {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0px 10px;
+}
+
+button:hover .title p,
+button:focus .title p {
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  font-style: italic;
+}
+
+#query {
+  width: 280px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px
+}
